@@ -169,7 +169,7 @@ local toggleEnabled = false
 
 -- Toggle（上に配置される）
 MiscTab:AddToggle({
-    Name = "Enable Speed",
+    Name = "Speed(歩く)",
     Default = false,
     Callback = function(Value)
         toggleEnabled = Value
@@ -186,7 +186,7 @@ MiscTab:AddToggle({
 
 -- Slider
 MiscTab:AddSlider({
-    Name = "Speed",
+    Name = "Speed Slider",
     Min = 1,
     Max = 300,
     Increment = 1,
