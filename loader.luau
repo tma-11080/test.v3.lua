@@ -51,7 +51,7 @@ FarmTab:AddDropdown({
 
 MiscTab:AddToggle({
     Name = "Fast attack (kill aura)",
-    Default = false,
+    Default = ture,
     Callback = function(Value)
         fastAttack = Value  -- ONならtrue, OFFならfalse
     end
@@ -168,7 +168,7 @@ local speedValue = 100
 local toggleEnabled = false
 
 -- Toggle（上に配置される）
-miscTab:AddToggle({
+MiscTab:AddToggle({
     Name = "Enable Speed",
     Default = false,
     Callback = function(Value)
@@ -185,7 +185,7 @@ miscTab:AddToggle({
 })
 
 -- Slider
-miscTab:AddSlider({
+MiscTab:AddSlider({
     Name = "Speed",
     Min = 1,
     Max = 300,
