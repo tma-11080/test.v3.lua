@@ -47,7 +47,7 @@ FarmTab:AddDropdown({
     end
 })
 
-        local fastAttack = false  -- ON/OFF 制御用フラグ
+        local fastAttack = ture  -- ON/OFF 制御用フラグ
 
 MiscTab:AddToggle({
     Name = "Fast attack (kill aura)",
@@ -157,7 +157,7 @@ end
 
 -- 無限ループでON/OFFを監視
 task.spawn(function()
-    while task.wait(0.05) do
+    while task.wait(0.1) do
         if fastAttack then
             attackNoCoolDown()
         end
